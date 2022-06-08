@@ -3,89 +3,195 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <link rel="./results.html" href="./results.html">
+  <link rel="stylesheet" href="./styles.css">
+
+  <title>Contact Page</title>
 </head>
+
+<main>
+  <h1>Contact me! And tell me about yourself!</h1>
+</main>
+<container>
 <body>
+
     <form action="results.html" method="GET" enctype="multipart/form-data">
+
+
       <div>
-        <label for="name">Name</label>
-        <input type="text" name="name" id="name" >
-    </div>
-    <div>
-      <label for="email">Email</label>
-      <input type="email" name="email" id="email" >
-    </div>
-    <div>
-      <label for="age">Age</label>
-      <input type="number" name="age" id="age" min="1" max="200" step="5">
-    </div>
-    <div>
-      <label for="date">Birthdate</label>
-      <input type="date" name="date" id="date" min="2019-06-10">
-    </div>
-    <div>
-      Favorite Food
-      <div>
-        <label for="banana">Banana</label>
-        <input type="checkbox" name="banana" id="banana">
+          <label for="name"><u>Name</u></label>
+              <input type="text" name="name" id="name">
       </div>
+
+<br>
+
       <div>
-        <label for="apple">Apple</label>
-        <input type="checkbox" name="apple" id="apple">
+          <label for="email"><u>Email</u></label>
+              <input type="email" name="email" id="email">
       </div>
-    </div>
-    <div>
-      Gender
+
+<br>    
+
       <div>
-        <label for="male">Male</label>
-        <input type="radio" name="gender" id="male" value="male">
+          <label for="age"><u>Age</u></label>
+                <input type="number" name="age" id="age" min="1" max="200" step="1">
       </div>
+
+<br>
+
       <div>
-        <label for="female">Female</label>
-        <input type="radio" name="gender" id="female" value="female">
+        
+          <label for="birthdate"><u>Birthdate</u></label>
+              <input type="date" name="birthdate" id="birthdate" min="1900-01-01">
       </div>
+
+<br>      
+
       <div>
-        <label for="other">Other</label>
-        <input type="radio" name="gender" id="other" value="other">
+          <label for="birthdayWish"><u>Birthday Wish?</u></label>
+          <input type="date" name="birthdayWish" id="birthdayWish" min="1900-01-01">
       </div>
-    </div>
-    <div>
-      <label for="eyeColor">Eye Color</label>
-      <select name="eyeColor" id="eyeColor" multiple>
-        <option value="Green">Green</option>
-        <option label="Red" value="Red"></option>
-      </select>
-    </div>
-    <div>
-      <label for="bio">Bio</label>
-      <textarea id="bio" name="bio"></textarea>
-    </div>
-    <input type="hidden" name="hidden" value="hi">
-    <div>
-      <label for="file">File</label>
-      <input id="file" type="file" name="file">
-    </div>
-    <div>
-      <label for="phone">Phone</label>
-      <input type="tel" name="phone" id="phone">
-    </div>
-    <div>
-      <label for="url">URL</label>
-      <input type="url" name="url" id="url">
-    </div>
-    <div>
-      <label for="color">Color</label>
-      <input type="color" name="color" id="color">
-    </div>
-    <div>
-      <label>
-        Password
-        <input type="password" name="password" >
-      </label>
-    </div>
-    <button type="reset">Reset</button>
-    <button type="submit">Submit</button>
+
+<br>
+
+      <div>
+          <label for="favoriteFood"><u>Favorite Food?</u></label></u>
+      <div>
+
+          <label for="banana">Banana</label>
+              <input type="checkbox" name="banana" id="favoriteFood">
+      </div>
+
+      <div>
+          <label for="apple">Apple</label>
+              <input type="checkbox" name="apple" id="favoriteFood">
+      </div>
+
+      <div>
+        <label for="literally anything else">Literally anything else</label>
+            <input type="checkbox" name="literally anything else" id="favoriteFood">
+      </div>
+
+<br>
+      
+      <div>
+            <label for="gender"><u>Gender</u></label>
+                <select name="gender" id="gender">
+                  <option value="male">Male</option>
+                  <option value="female">Female</option>
+                  <option value="other">Other</option>
+                  <option value="cyborg">Cyborg</option>
+              </select>
+      </div>
+
+<br>
+
+       <div>
+            <label for="eyeColor"><u>Eye Color</u></label>
+                <select name="eyeColor" id="eyeColor" multiple>
+                     <option value="Green">Green</option>
+                     <option value="Blue">Blue</option>
+                     <option value="Brown">Brown</option>
+                     <option value="Hazel">Hazel</option>
+               </select>
+      </div>
+
+<br>
+
+      <div>
+          <label for="bio"><u>Bio</u></label>
+              <textarea maxlength="500" minlength="20" id="bio" name="bio"></textarea>
+      </div>
+
+  
+
+      <div>
+          <input type="hidden" name="hidden" value="hi">
+      </div>
+
+<br>    
+
+       <div>
+           <label for="file"><u>File</u></label>
+              <input id="file" type="file" name="file">
+       </div>
+
+<br>
+
+       <div>
+          <label for="phone"><u>Phone</u></label>
+              <input type="tel" name="phone" id="phone">
+       </div>
+
+<br>
+
+       <div>
+          <label for="url"><u>URL</u></label>
+              <input type="url" name="url" id="url">
+       </div>
+
+<br>
+
+      <div>
+           <label for="favColor" id="favColor"><u>Whats your favorite color? Let us know below!</u></label>
+           <br>
+               <input type="color" name="favColor" id="favColor">
+      </div>
+
+<br>
+
+      <div>
+            <label for="password" id="password">
+                  <u>Password</u>
+                  <input type="password" name="password" id="password">
+            </label>
+      </div>
+
+<br>
+
+      <div>
+        <label for="howdidyou" id="howdidyou"><u>How did you hear about me?</u></label> 
+        <div>
+  
+            <label for="classmate">Classmate</label>
+                <input type="checkbox" name="classmate" id="howdidyou">
+        </div>
+  
+        <div>
+            <label for="linkedin">Linkedin</label>
+                <input type="checkbox" name="linkedin" id="howdidyou">
+        </div>
+  
+        <div>
+          <label for="resume submission">Resume Submission</label>
+              <input type="checkbox" name="resume submission" id="howdidyou">
+        </div>
+
+        <div>
+          <label for="coding academy rec">Coding Academy Rec</label>
+              <input type="checkbox" name="coding academy rec" id="howdidyou">
+        </div>
+
+<br>
+
+
+        <div>
+          <label for="would you like to be contacted back?" id="contacted"><u>Would you like to be contacted back?</u></label>
+          <br>
+            <input type="radio" id=yes name="No" value="html"> 
+              <label for="yes">Yes</label>
+            <input type="radio" id=no name="Yes" value="html">
+              <label for="no">No</label>
+        </div>
+
+
+<br>
+<br>
+
+       <button type="reset">Reset</button>
+       <button type="submit">Submit</button>
   </form>
   <!-- <script src="scripts.js"></script> -->
 </body>
+</container>
 </html>

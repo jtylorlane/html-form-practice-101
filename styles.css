@@ -1,0 +1,132 @@
+main {
+            text-align: center;
+            background-image: url("./headerPhoto.jpg");
+            background-size: cover;
+            color: white;
+    
+
+
+}
+
+body {
+    text-align: start;
+            color: white;
+            background-image: url("./backgroundPic.jpg");
+            
+    
+
+}
+h1 {
+
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 40px;
+}
+
+.name {grid-area: name;}
+.email {grid-area: email;}
+.age {grid-area: age;}
+.birthdate {grid-area: birthdate;}
+.birthWish {grid-area: birthWish;}
+.favoriteFood {grid-area: favoriteFood;}
+.gender {grid-area: gender;}
+.eyeColor {grid-area: eyeColor;}
+.bio {grid-area: bio;}
+.file {grid-area: file;}
+.phone {grid-area: phone;}
+.url {grid-area: url;}
+.favColor {grid-area: favColor;}
+.password {grid-area: password;}
+.contacted {grid-area: contacted;}
+
+
+
+.container {
+    display: grid;
+    grid-template-areas: 
+    "name"
+    "email"
+    "age"
+    "birthdate"
+    "birthWish"
+    "favoriteFood"
+    "gender"
+    "eyeColor"
+    "bio"
+    "file"
+    "phone"
+    "url"
+    "favColor"
+    "password"
+    "contacted";
+}
+
+
+@media (min-width: 576px)
+{
+    main {
+        text-align: center;
+            background-image: url(headerPhoto.jpg);
+            background-size: cover;
+            color: white;
+        
+
+    }
+    body {
+        text-align: start;
+            color: white;
+            background-image: url(backgroundPic.jpg);
+        
+    }
+
+
+}
+
+@media (min-width: 992px) 
+{
+    main {
+            text-align: center;
+            background-image: url(headerPhoto.jpg);
+            background-size: cover;
+            color: white;
+           
+
+    }
+
+    body {
+            text-align: center;
+            color: white;
+            background-image: url(backgroundPic.jpg);
+           
+            
+
+            
+    }
+        
+    };
+    .container {
+        display: grid;
+        grid-template-areas:
+        "name"
+        "email"
+        "age"
+        "birthdate"
+        "birthWish"
+        "favoriteFood"
+        "gender"
+        "eyeColor"
+        "bio"
+        "file"
+        "phone"
+        "url"
+        "favColor"
+        "password"
+        "contacted";
+
+    }
+
+    label {
+
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        text-underline-position: below;
+        
+    }
